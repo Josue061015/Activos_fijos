@@ -26,6 +26,16 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 import HojaEntrega from '../Reports/HojaEntrega';
 import Activo from '../Reports/Activo';
+import Exportar from '../Reports/Exportar';
+import Importacion from '../Reports/Importacion';
+import ModActivo from '../Reports/ModActivo';
+import Revaluacion from '../Reports/Revaluacion';
+import ConActivo from '../Reports/ConActivo';
+import Amorti from '../Reports/Amorti';
+import Depre from '../Reports/Depre';
+import Cambios from '../Reports/Cambios';
+import Listado from '../Reports/Listado';
+import Baja from '../Reports/Baja';
 
 function Copyright(props) {
   return (
@@ -141,7 +151,26 @@ export default function Dashboard() {
            return <HojaEntrega/>
       case 'activo':
            return <Activo/>
-      
+      case 'Listado':
+           return <Listado/>
+      case 'ModActivo':
+           return <ModActivo/> 
+      case 'Revaluacion':
+           return <Revaluacion/> 
+      case 'ConActivo':
+            return <ConActivo/>
+      case 'Baja':
+            return <Baja/>
+      case 'Cambios':
+            return <Cambios/>
+      case 'Depre':
+            return <Depre/> 
+      case 'Amorti':
+            return <Amorti/> 
+      case 'Exportar':
+           return <Exportar/>
+      case 'Importacion':
+           return <Importacion/> 
       
       default:
          return <div>Hola mundo</div>
