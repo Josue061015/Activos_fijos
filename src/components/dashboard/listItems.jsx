@@ -9,7 +9,11 @@ import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-
+import FileUploadIcon from '@mui/icons-material/FileUpload';
+import DownloadIcon from '@mui/icons-material/Download';
+import UpdateIcon from '@mui/icons-material/Update';
+import ArticleIcon from '@mui/icons-material/Article';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 export const MainListItems = ({onClickItem}) => {
   return (
@@ -41,6 +45,77 @@ export const MainListItems = ({onClickItem}) => {
           <LayersIcon />
         </ListItemIcon>
         <ListItemText primary="hojaEntrega" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("ModActivo")}>
+        <ListItemIcon>
+          <UpdateIcon />
+        </ListItemIcon>
+        <ListItemText primary="Modificacion de Activo" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("Revaluacion")}>
+        <ListItemIcon>
+          <UpdateIcon />
+        </ListItemIcon>
+        <ListItemText primary="Revaluacion de Activo" />
+      </ListItemButton>
+      
+      <ListItemButton onClick={() => onClickItem("Baja")}>
+        <ListItemIcon>
+          <HighlightOffIcon />
+        </ListItemIcon>
+        <ListItemText primary="Baja de Activo" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("ConActivo")}>
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Consolidado Activo" />
+      </ListItemButton>
+      
+      <ListItemButton onClick={() => onClickItem("Listado")}>
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Lista Activo" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("Cambios")}>
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Cambios de Activo" />
+      </ListItemButton>
+
+
+      <ListItemButton onClick={() => onClickItem("Depre")}>
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Depreciaciones" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("Amorti")}>
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Amortizaciones" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("Exportar")}>
+        <ListItemIcon>
+          <DownloadIcon />
+        </ListItemIcon>
+        <ListItemText primary="Exportar" />
+      </ListItemButton>
+
+      <ListItemButton onClick={() => onClickItem("Importacion")}>
+        <ListItemIcon>
+          <FileUploadIcon />
+        </ListItemIcon>
+        <ListItemText primary="Importar" />
       </ListItemButton>
 
       <ListItemButton onClick={() => onClickItem("reports")}>
